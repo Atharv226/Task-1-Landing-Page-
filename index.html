@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Hub - Stylish Clothing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #3a3e4d;
+            color: #3a3e4d;
+        }
+        header {
+            background:#3a3e4d ;
+            padding: 20px 0;
+            text-align: center;
+            color: #bf998f;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .hero {
+            text-align: center;
+            background: url('https://via.placeholder.com/1200x600') no-repeat center/cover;
+            padding: 120px 20px;
+            color: #bf998f;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #bf998f;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            background:#bf998f;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1.5s ease-in-out forwards;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            color: white;
+            background: #bf998f;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .button:hover {
+            background: #bf998f;
+            transform: scale(1.05);
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            background:#3a3e4d;
+            padding: 20px;
+            margin: 15px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <body>
+    
+        <header> 
+            <div class="header-container">
+                 <h1 class="logo">Fashion Hub</h1>
+            </div>
+        </header>
+    </body>
+    </html>
+    <div class="hero">
+        Elevate Your Look With Exclusive Styles
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>About Us</h2>
+            <p>We offer trendy and stylish clothing for every occasion. Find the perfect outfit today!</p>
+            <a href="#" class="button">Explore Now</a>
+        </div>
+
+        <div class="section">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="elegent.jpg" height="150" width="150" alt="Product 1">
+                    <p>Elegant Dress</p>
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+                <div class="product">
+                    <img src="shirt.jpg" height="150" width="150" alt="Product 2">
+                    <p>Casual Shirt</p>
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+                <div class="product">
+                    <img src="trendy.jpg"  height="150" width="150" alt="Product 3">
+                    <p>Trendy Jacket</p>
+                    <a href="#" class="button">Shop Now</a>  
+                </div>
+                <div class="product">
+                    <img src="morden.jpg"  height="150" width="150" alt="Product 3">
+                    <p>Morden Dress</p>
+                    <a href="#" class="button">Shop Now</a>  
+                </div>
+                <div class="product">
+                    <img src="coat.jpg"  height="150" width="150" alt="Product 3">
+                    <p>Stylish Coat</p>
+                    <a href="#" class="button">Shop Now</a>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Fashion Hub. All rights reserved.
+    </footer>
+
+</body>
+</html>
